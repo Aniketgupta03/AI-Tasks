@@ -1,0 +1,15 @@
+inputfile = input("enter the name of the file:")
+f = open(inputfile, 'r')
+mylist = []
+for line in f:
+    for i in line:
+        if i.isdigit() == True:
+            mylist.append(int(i))
+sum = 0
+for j in mylist:
+    sum = sum + j
+ave = (sum/len(mylist))
+print("Minimum Number:",min(mylist))
+print("Maximum Number:",max(mylist))
+print("Sum of Numbers:",sum)
+print("Average of Numbers:",ave)
