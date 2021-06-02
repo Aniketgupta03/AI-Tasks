@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-x = [1,2,3,4]
-y = [10,20,30,40]
-plt.plot(x,y)
+a = [9,8,7,6]
+b = [60,70,80,90]
+plt.plot(a,b)
 plt.show()
