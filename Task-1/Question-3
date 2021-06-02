@@ -1,20 +1,20 @@
-file1 = open('int1.txt','r')
-file2= open('int2.txt','r')
-mylist1 = []
-mylist2 = []
-for line in file1:
+A1 = open('int1.txt','r')
+A2= open('int2.txt','r')
+list1 = []
+list2 = []
+for line in A1:
     for i in line:
         if i.isdigit() == True:
-            mylist1.append(int(i))
-for line in file2:
+            list1.append(int(i))
+for line in A2:
     for i in line:
         if i.isdigit() == True:
-            mylist2.append(int(i))
-print("Elements after sorting in file1:",sorted(mylist1))
-print("Elements after sorting in file2:",sorted(mylist2))
+            list2.append(int(i))
+print("Elements after sorting in A1:",sorted(list1))
+print("Elements after sorting in A2:",sorted(list2))
 with open('output.txt','w') as outfile:
-    outfile.write(str(sorted(mylist1)))
+    outfile.write(str(sorted(list1)))
     outfile.write("\n")
-    outfile.write(str(sorted(mylist2)))
-file3 = open('output.txt','r')
+    outfile.write(str(sorted(list2)))
+A3 = open('output.txt','r')
 print("outfile:",file3.read())
