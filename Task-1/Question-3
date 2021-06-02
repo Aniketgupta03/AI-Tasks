@@ -1,0 +1,20 @@
+file1 = open('int1.txt','r')
+file2= open('int2.txt','r')
+mylist1 = []
+mylist2 = []
+for line in file1:
+    for i in line:
+        if i.isdigit() == True:
+            mylist1.append(int(i))
+for line in file2:
+    for i in line:
+        if i.isdigit() == True:
+            mylist2.append(int(i))
+print("Elements after sorting in file1:",sorted(mylist1))
+print("Elements after sorting in file2:",sorted(mylist2))
+with open('output.txt','w') as outfile:
+    outfile.write(str(sorted(mylist1)))
+    outfile.write("\n")
+    outfile.write(str(sorted(mylist2)))
+file3 = open('output.txt','r')
+print("outfile:",file3.read())
