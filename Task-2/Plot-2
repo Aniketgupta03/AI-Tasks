@@ -1,0 +1,12 @@
+%matplotlib inline
+import matplotlib.pyplot as plt
+plt.style.use('classic')
+import numpy as np
+x = [1930,1934,1938,1950,1954,1958,1962,1966,1970,1974,1978,1982,1986,1990,1994,1998,2002,2006,2010,2014]
+y = [13,16,15,13,16,16,16,16,16,16,16,24,24,24,24,32,32,32,32,32]
+plt.xlabel("Years")
+plt.ylabel("Qualified Teams")
+plt.title("Scatter plot \n Year v/s Total number of teams participated")
+plt.scatter(x,y, label='plot1', color = 'red',marker ='*', s = 100)
+plt.legend()
+plt.show()
